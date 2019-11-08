@@ -1,0 +1,115 @@
+.nav-top{
+    position: fixed;
+    // background: rgb(56, 49, 49);
+    background: #252424; 
+//     background: linear-gradient(90deg,  #252424, #ab202e, #d55f50, #f0a285, #fcd8c4, #faf4f0, #dfdfdf, #b8b8b8, #868686, #4e4e4e, #4e4e4e);
+//      background: -webkit-linear-gradient(to right, #141e30, #243b55); /* Chrome 10-25, Safari 5.1-6 */
+//   background: linear-gradient(to right, #121824, #19293b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+//    background: #000000; /* fallback for old browsers */
+//   background: -webkit-linear-gradient(to right, #000000, #434343); /* Chrome 10-25, Safari 5.1-6 */
+//   background: linear-gradient(to right, #000000, #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: 1s;
+    display:flex;
+    overflow:hidden;
+    
+
+}
+
+.navtop-opener{
+    top:0;
+    left:0;
+    position: fixed;
+
+}
+
+.hidden{
+    height:0;
+}
+.navtop-ul{
+    
+    position: absolute;
+    margin-left: 150px;
+    width:100%;
+    height: 100%;
+    color: red;
+    display:flex;
+    flex-direction: row;
+    position: relative;
+    flex-wrap: wrap;
+    &>li{
+         margin: 30px;
+       max-width: 400px;
+   max-height:50px;
+     
+    list-style: none;
+
+     border-radius: 10px;
+   
+    &>h3{
+        
+        font-weight: 900;
+     -webkit-text-stroke: 0.9px rgb(124, 117, 117);
+        text-shadow: 33px 10px 5px black;
+        
+    }
+    &:nth-last-child(2){
+         margin-left: auto;
+         justify-self: flex-end;
+         align-self: flex-start;
+    }
+    //  &:last-child{
+    //      margin-left:auto;
+         
+
+    //     }
+    }
+ 
+
+}
+.button-special{
+     border: 2px solid white;
+     transition: 1s;
+     &:hover{
+         background: yellowgreen;
+      
+     }
+}
+.legend{
+ 
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    &>h4{
+        z-index:12;
+    }
+    &>p{
+        border:1px solid gray;
+        z-index:10;
+        display: inline;
+        background:yellowgreen;
+        color: black;
+        &:last-child{
+            color:black;
+            background: red;
+        }
+    }
+}
+.image-container{
+ 
+    transition: 1s;
+    border: 2px solid white;
+ 
+    height:100%;
+    width:100px;
+    object-fit:cover;
+    &>img{
+        width:100%;
+        height: 100%;
+    }
+}

@@ -1,0 +1,42 @@
+.content{
+   color: white;
+
+    &>th{
+        
+        border: 2px solid white;
+        border-radius: 5px;
+
+
+     
+       
+    }
+
+
+
+}
+.record-requested{
+    height:100%;
+    width:100%;
+    background: yellowgreen;
+    &:hover{
+        color: black;
+    }
+
+}
+.record-deleted{
+    &:hover{
+        color: black;
+    }
+    background: red;
+}
+
+
+.content-active{
+
+    transition: 1s;
+    background: black;
+    color:white;
+    &>.record-requested{
+        color:black
+    }
+}

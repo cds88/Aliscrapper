@@ -1,0 +1,43 @@
+.main-page{
+    width:100%;
+    height: 100%;
+     min-height : 100vh;
+    background: black;
+}
+.wrapper{
+    
+    height: 100%;
+    width:calc(100%-margin);
+    box-sizing: border-box;
+
+    background: #2f2f2f;
+   
+     
+ 
+    margin-left: 1%;
+    margin-right: 1%;
+    color: black;
+ 
+}
+thead{
+    background: black;
+    color: white;
+}
+
+
+
+.spacer{
+    transition: 1s;
+    width:100%;
+    background: black;
+    
+}
+
+.spacer-closed{
+    height:0;
+
+}
+.spacer-opened{
+    height:100px;
+}
+

@@ -1,0 +1,17 @@
+.spinner-wrapper{
+   
+    left:0;
+    top:0;
+    height:80vh;
+    width:100%;
+    background: gray;
+    z-index:-2;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.table{
+    overflow:hidden;
+}
