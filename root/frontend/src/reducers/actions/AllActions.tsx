@@ -88,6 +88,7 @@ export const reportItems = (requestSelection:any)=>{
     return(
         dispatch: Dispatch<AllAppActions>, getState:()=>AppState)=>{
             dispatch(MakeCopyrightInfrigementNoticeBegin());
+
         axios.post('/data/PostNotice/', results,
             {
                 headers: {
@@ -99,6 +100,18 @@ export const reportItems = (requestSelection:any)=>{
                 response=>dispatch(MakeCopyrightInfrigementNoticeSuccess())
             ).catch(error=>{
                 dispatch(MakeCopyrightInfrigementNoticeError())
-            })  
+            }) 
+         
+            // fetch('/data/PostNotice/', 
+            // {
+            // method:'post',
+            // headers: {'X-CSRFToken' :getCSRFToken() },
+            // body:JSON.stringify({ 
+            //   ...results
+            // })
+
+
+            // } ).then(response=> dispatch(MakeCopyrightInfrigementNoticeSuccess()))
+
         }
 }

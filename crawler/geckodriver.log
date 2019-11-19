@@ -1,0 +1,141 @@
+1573749294120	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ser\\AppData\\Local\\Temp\\rust_mozprofile.zpRUTS7RfrZ0"
+1573749294781	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1573749294781	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1573749294781	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1573749294782	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1573749297068	Marionette	INFO	Listening on port 50347
+1573749297423	Marionette	WARN	TLS certificate errors will be ignored for this session
+WebGL(0000000016B93800)::ForceLoseContext
+WebGL(0000000016BA0800)::ForceLoseContext
+WebGL(000000000A208000)::ForceLoseContext
+WebGL(0000000016BA0800)::ForceLoseContext
+WebGL(000000000A20D800)::ForceLoseContext
+WebGL(000000001943F800)::ForceLoseContext
+WebGL(000000000A213000)::ForceLoseContext
+JavaScript error: https://q5dlu.tdum.alibaba.com/dss.js, line 1: ReferenceError: __um_perf_cb is not defined
+WebGL(000000001944D000)::ForceLoseContext
+JavaScript error: https://2liudy.tdum.alibaba.com/dss.js, line 1: ReferenceError: __um_perf_cb is not defined
+JavaScript warning: http://i.alicdn.com/ae-header/20190718134354/buyer/glofront/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: http://i.alicdn.com/ae-header/20190718134354/buyer/glofront/ae-header.js, line 5: unreachable code after return statement
+JavaScript warning: http://i.alicdn.com/ae-header/20190718134354/buyer/glofront/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: http://i.alicdn.com/ae-header/20190718134354/buyer/glofront/ae-header.js, line 5: unreachable code after return statement
+JavaScript warning: http://i.alicdn.com/ae-channel-ui/2.0.0/material-private/one-click-coupon/ticket.js, line 4: unreachable code after return statement
+JavaScript warning: http://i.alicdn.com/ae-channel-ui/2.0.0/material-private/one-click-coupon/ticket.js, line 4: unreachable code after return statement
+WebGL(0000000016B96800)::ForceLoseContext
+JavaScript warning: http://i.alicdn.com/ae-channel-ui/2.0.0/material-private/one-click-ticket/ticket.js, line 4: unreachable code after return statement
+JavaScript warning: http://i.alicdn.com/ae-channel-ui/2.0.0/material-private/one-click-ticket/ticket.js, line 4: unreachable code after return statement
+WebGL(000000003475E800)::ForceLoseContext
+WebGL(0000000034765000)::ForceLoseContext
+[Parent 5716, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1572401533/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+WebGL(000000000A213000)::ForceLoseContext
+WebGL(0000000015CC9800)::ForceLoseContext
+JavaScript warning: http://i.alicdn.com/ae-header/20190718134354/buyer/glofront/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: http://i.alicdn.com/ae-header/20190718134354/buyer/glofront/ae-header.js, line 5: unreachable code after return statement
+JavaScript warning: http://i.alicdn.com/ae-header/20190718134354/buyer/glofront/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: http://i.alicdn.com/ae-header/20190718134354/buyer/glofront/ae-header.js, line 5: unreachable code after return statement
+JavaScript error: http://us.cobra.aliexpress.com/p4pforlist.html?_custid=&_id=4000284126913%2C4000075067437%2C32923426024%2C4000071947967%2C32898150291%2C4000166348971&categoryBrowse=0&count=5&currencyType=USD&dcatid=63705%2C200216654%2C200216981%2C200217991&dl=r&ip=77.253.104.7&keyword=iphone&mt=e&offset=0&p4pId=e89c7e17-c40f-4772-b055-a191efa1215c&pageId=p3bufvf2mscau39a16e6ac5321316aea75c4124a45&pageType=main_search_keyword&pid=&site=glo_pl&t=15737493397621085&type=bottom&cb=P4pbottomListCallback, line 1: SyntaxError: expected expression, got ')'
+JavaScript warning: http://i.alicdn.com/ae-search-ui/standalone/index.871b5f95.js, line 4: unreachable code after return statement
+JavaScript warning: http://i.alicdn.com/ae-search-ui/standalone/index.871b5f95.js, line 4: unreachable code after return statement
+[Parent 5716, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1572401533/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+JavaScript warning: http://i.alicdn.com/ae-header/20190718134354/buyer/glofront/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: http://i.alicdn.com/ae-header/20190718134354/buyer/glofront/ae-header.js, line 5: unreachable code after return statement
+JavaScript warning: http://i.alicdn.com/ae-header/20190718134354/buyer/glofront/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: http://i.alicdn.com/ae-header/20190718134354/buyer/glofront/ae-header.js, line 5: unreachable code after return statement
+WebGL(000000001427C800)::ForceLoseContext
+WebGL(0000000033085800)::ForceLoseContext
+JavaScript error: http://us.cobra.aliexpress.com/p4pforlist.html?_custid=&_id=4000284126913%2C32923426024%2C33052887726%2C4000166348971%2C33026651188%2C4000283325531&categoryBrowse=0&catid=509&count=5&currencyType=USD&dcatid=509&dl=r&ip=77.253.104.7&keyword=iphone&mt=e&offset=0&p4pId=95caa842-4fe7-48df-b94f-6ba7771435fb&pageId=p3bufvf2mscau39a16e6ac56ad94e70bfc91e48635&pageType=seo&pid=&site=glo_pl&t=15737493537201628&type=bottom&cb=P4pbottomListCallback, line 1: SyntaxError: expected expression, got ')'
+JavaScript warning: http://i.alicdn.com/ae-search-ui/standalone/index.871b5f95.js, line 4: unreachable code after return statement
+JavaScript warning: http://i.alicdn.com/ae-search-ui/standalone/index.871b5f95.js, line 4: unreachable code after return statement
+[Parent 5716, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1572401533/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+WebGL(0000000034574800)::ForceLoseContext
+WebGL(0000000034E15800)::ForceLoseContext
+JavaScript warning: http://i.alicdn.com/ae-header/20190718134354/buyer/glofront/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: http://i.alicdn.com/ae-header/20190718134354/buyer/glofront/ae-header.js, line 5: unreachable code after return statement
+JavaScript warning: http://i.alicdn.com/ae-header/20190718134354/buyer/glofront/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: http://i.alicdn.com/ae-header/20190718134354/buyer/glofront/ae-header.js, line 5: unreachable code after return statement
+1573749424865	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+[Parent 5716, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1572401533/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+1573749427527	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+JavaScript warning: http://i.alicdn.com/ae-feedback-ui/display/productEvaluation/??index.523c7bdb.js, line 3: unreachable code after return statement
+WebGL(000000003457A800)::ForceLoseContext
+WebGL(0000000038A60800)::ForceLoseContext
+1573749432647	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+[Parent 5716, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1572401533/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+1573749437734	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1573749442833	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1573749447932	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1573749453033	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+WebGL(000000001C1BD000)::ForceLoseContext
+WebGL(0000000033477800)::ForceLoseContext
+JavaScript warning: http://i.alicdn.com/ae-header/20190718134354/buyer/glofront/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: http://i.alicdn.com/ae-header/20190718134354/buyer/glofront/ae-header.js, line 5: unreachable code after return statement
+JavaScript warning: http://i.alicdn.com/ae-header/20190718134354/buyer/glofront/ae-header.js, line 4: unreachable code after return statement
+JavaScript warning: http://i.alicdn.com/ae-header/20190718134354/buyer/glofront/ae-header.js, line 5: unreachable code after return statement
+1573749460185	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+[Parent 5716, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1572401533/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+1573749462866	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1573749467985	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1573749473088	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1573749478192	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1573749483289	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1573749488388	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+WebGL(0000000019448800)::ForceLoseContext
+WebGL(0000000033087000)::ForceLoseContext
+1573749495508	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+[Parent 5716, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1572401533/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+1573749498263	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1573749503365	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1573749508467	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1573749513681	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1573749518761	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1573749523863	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+WebGL(000000001427B000)::ForceLoseContext
+WebGL(000000003703F800)::ForceLoseContext
+1573749530938	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+[Parent 5716, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1572401533/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+1573749533619	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1573749538714	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1573749543816	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1573749548897	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1573749553998	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1573749559099	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+WebGL(000000000A2A4000)::ForceLoseContext
+WebGL(000000003456C800)::ForceLoseContext
+1573749566288	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1573749568974	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+[[Parent 5716, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1572401533/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 6468, Chrome_ChildThread] WARNING: pipe error[Child 8380, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1572401533/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 8380, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_console.error: (new Error("Connection closed before committing the transaction.", "resource://gre/modules/Sqlite.jsm", 683))
+[Parent 5716, Gecko_IOThread] WARNING: file z:/task_1572401533/build/src/ipc/chromium/src/base/process_util_win.cc, line 160
+1573749577140	Marionette	INFO	Stopped listening on port 50347

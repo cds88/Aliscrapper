@@ -9,7 +9,7 @@ import { AppState } from '../../../reducers/ConfigureStore';
 import { ThunkDispatch } from 'redux-thunk';
 import { AllAppActions } from '../../../reducers/actions/AllActionsTypes';
 import { bindActionCreators } from 'redux';
-
+import GridRow from './GridRow';
 export interface RowProps{
     Record:Record;
 }
@@ -66,7 +66,7 @@ const TableRow=(Props:Props)=> {
 const handleHoverImage =()=>{
     if(!Props.UserInterface.isModalOpened){
         setTimeOut({
-            timeout: window.setTimeout(
+            timeout: window.setTimeout( 
                 ()=>{
                     Props.openModal(Props.Record.images.split(","));
             },700)
@@ -94,23 +94,23 @@ const handleRequestTypeChange=(e:React.ChangeEvent<HTMLSelectElement>):void=>{
         switch(Props.Record.status){
             case "Requested":
                 return(
-                    <th className="record-requested">
+                    <td >
                         <p>Request Sent</p>
                         <p>Type of request:</p>
                         <p>{Props.Record.category}</p>
-                    </th>
+                    </td>
                 )
             case "Deleted":
                 return(
-                    <th className="record-deleted">
+                    <td >
                         <p>Record deleted</p>
                         <p>Type of request</p>
                         <p>{Props.Record.category}</p>
-                    </th>
+                    </td>
                 )
             default:
                 return(
-                    <th> <select id="requestTypeSelect" onChange={handleRequestTypeChange}>
+                    <td> <select id="requestTypeSelect" onChange={handleRequestTypeChange}>
                         <option value=""> Type of notice</option>
                         <option value="Trademark"> Trademark </option>
                         <option value="Iphone5"> Iphone5 </option>
@@ -122,7 +122,7 @@ const handleRequestTypeChange=(e:React.ChangeEvent<HTMLSelectElement>):void=>{
                         
 
                     </select>
-                    </th>
+                    </td>
                 )
 
         }
@@ -135,30 +135,31 @@ const handleRequestTypeChange=(e:React.ChangeEvent<HTMLSelectElement>):void=>{
             case "Requested":
                 return(
                    
-                    <th className="record-requested" >
-                        <p>Wyslane</p>
-                        <p>Data</p>
+                    <td className="requested" >
+                 
+                        <p>Date</p>
                         <p>{Props.Record.dateRequested}</p>
-                        <p>Godzina</p>
+                        <p>Hour</p>
                         <p>{Props.Record.timeRequested.split(".")[0]}</p>
-                    </th>
+   
+                    </td>
                 )
             case "Deleted":
                 return (
                     
-                    <th className="record-deleted" >
-                        <p>Usuniete</p>
-                        <p>Data</p>
+                    <td className="deleted" >
+                        
+                        <p>Date</p>
                         <p>{Props.Record.dateDeleted}</p>
-                        <p>Godzina</p>
-                        <p>{Props.Record.timeDeleted}</p>
+                        <p>Hour</p>
+                        <p>{Props.Record.timeDeleted.split(".")[0]}</p>
 
-                    </th>
+                    </td>
                 )
             default:
                 return(
                  
-                    <th>
+                    <td>
                         <label>
                             <input
                                 type="checkbox"
@@ -166,7 +167,7 @@ const handleRequestTypeChange=(e:React.ChangeEvent<HTMLSelectElement>):void=>{
                                 onClick={selectRequest}
                                  />
                             Select </label>
-                    </th>
+                    </td>
 
                 )
 
@@ -200,15 +201,15 @@ const handleRequestTypeChange=(e:React.ChangeEvent<HTMLSelectElement>):void=>{
 
     return (
        
-        <tr className={`content ${active? ('content-active'): ('')}`}
+        <tr className={`content`}
         onMouseEnter={handleHoverRow} 
         onMouseLeave={cancelHoverRow}>
 
-            <th>{Props.Record.id}</th>
-            <th>{Props.Record.name}</th>
-            <th>{Props.Record.seller}</th>
-            <th>{Props.Record.price}</th>
-            <th>
+            <td>{Props.Record.id}</td>
+            <td>{Props.Record.name}</td>
+            <td>{Props.Record.seller}</td>
+            <td>{Props.Record.price}</td>
+            <td>
                 <a href={Props.Record.link} rel="noreferer noopener" target="_blank">
                     <img src={Props.Record.thumb } 
                     onMouseOver={handleHoverImage} 
@@ -216,9 +217,9 @@ const handleRequestTypeChange=(e:React.ChangeEvent<HTMLSelectElement>):void=>{
                     />
                     </a>
             
-            </th>
-            <th>{handleRequestType()}</th>
-            <th>{handleRequestSelection()}</th>
+            </td>
+         {handleRequestType()}
+        {handleRequestSelection()}
 
        </tr>
     )

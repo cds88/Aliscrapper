@@ -21,7 +21,7 @@ import {  Record} from './reducers/reducer_data/Data';
 import { AllAppActions } from './reducers/actions/AllActionsTypes';
 import { bindActionCreators } from 'redux';
 import FooterComponent from './components/component_footer/FooterComponent';
-
+  import 'bootstrap/dist/css/bootstrap.min.css';
 import ModalComponent from './components/component_modal/ModalComponent';
 
 import { CSSTransition } from 'react-transition-group';
@@ -62,7 +62,7 @@ const Master =(Props: Props) => {
     
     useEffect(()=>{
         Props.fetch(Props.UserInterface.selectedDataType);
-        console.clear();
+   
     },[])
     
         return (

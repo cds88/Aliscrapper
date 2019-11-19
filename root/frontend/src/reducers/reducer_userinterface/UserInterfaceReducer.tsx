@@ -31,7 +31,7 @@ const InterfaceReducer = (
             return { ...state, navTopImage:action.image}
         case MAKE_COPYRIGHT_INFRIGEMENT_NOTICE_BEGIN:
             window.location.reload();
-            return {...state}
+            return {...state, selectedRequestTypes:{}}
         default:
             return state;
     }

@@ -5,24 +5,14 @@ import '../../../styles/GridBackgroundStyles.scss';
 
 const GridBackground=()=> {
 
-    var rows=[];
-    for (var i=0; i<12; i++){
-        rows.push(<p></p>)
-    }
-
-
-
+   
+  
 
 
     return (
         <div id="grid-background">
-            <p></p><p></p>
-            <p></p><p></p>
-            <p></p><p></p>
-            <p></p><p></p>
-            <p></p><p></p>
-            <p></p><p></p>
 
+            {Array.from({ length: 12 }, el => <p />)}
 
         </div>
     )
