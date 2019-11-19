@@ -73,10 +73,15 @@ export const fetchBeginDispatch = (dataType:string) => {
     };
 };
 
+export interface Cookie{
+    [cookieKey: string]: string
+}
+
 export const getCSRFToken = () => {
-    var token = document.cookie.split(';')[0];
-    token = token.split('=')[1];
-    return token
+ 
+    var cookie= document.cookie.split(";").reduce<Cookie>((object, el) => { return { ...object, [el.split("=")[0]]: el.split("=")[1] } }, {})
+     
+    return cookie['csrftoken'] 
 }
 
 export const reportItems = (requestSelection:any)=>{
@@ -102,16 +107,7 @@ export const reportItems = (requestSelection:any)=>{
                 dispatch(MakeCopyrightInfrigementNoticeError())
             }) 
          
-            // fetch('/data/PostNotice/', 
-            // {
-            // method:'post',
-            // headers: {'X-CSRFToken' :getCSRFToken() },
-            // body:JSON.stringify({ 
-            //   ...results
-            // })
-
-
-            // } ).then(response=> dispatch(MakeCopyrightInfrigementNoticeSuccess()))
+        
 
         }
 }

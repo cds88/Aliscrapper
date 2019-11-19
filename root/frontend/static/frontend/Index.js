@@ -45152,25 +45152,6 @@ exports.default = react_redux_1.connect(MapStateToProps, null)(TableComponent);
 
 /***/ }),
 
-/***/ "./root/frontend/src/components/component_table/components/GridRow.tsx":
-/*!*****************************************************************************!*\
-  !*** ./root/frontend/src/components/component_table/components/GridRow.tsx ***!
-  \*****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-const React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-const GridRow = () => {
-    return (React.createElement("div", null, Array.from({ length: 5 }, el => React.createElement("div", { className: "element" }))));
-};
-exports.default = GridRow;
-
-
-/***/ }),
-
 /***/ "./root/frontend/src/components/component_table/components/TableRow.tsx":
 /*!******************************************************************************!*\
   !*** ./root/frontend/src/components/component_table/components/TableRow.tsx ***!
@@ -45187,7 +45168,6 @@ const react_redux_1 = __webpack_require__(/*! react-redux */ "./node_modules/rea
 const AllActions_1 = __webpack_require__(/*! ../../../reducers/actions/AllActions */ "./root/frontend/src/reducers/actions/AllActions.tsx");
 __webpack_require__(/*! ../../../styles/TableRowStyles.scss */ "./root/frontend/src/styles/TableRowStyles.scss");
 const redux_1 = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
-const GridRow_1 = __webpack_require__(/*! ./GridRow */ "./root/frontend/src/components/component_table/components/GridRow.tsx");
 const mapStateToProps = (state, ownProps) => ({
     UserInterface: state.InterfaceReducer
 });
@@ -45264,7 +45244,6 @@ const TableRow = (Props) => {
         switch (Props.Record.status) {
             case "Requested":
                 return (React.createElement("td", { className: "requested" },
-                    React.createElement(GridRow_1.default, null),
                     React.createElement("p", null, "Date"),
                     React.createElement("p", null, Props.Record.dateRequested),
                     React.createElement("p", null, "Hour"),
@@ -45397,9 +45376,8 @@ exports.fetchBeginDispatch = (dataType) => {
     };
 };
 exports.getCSRFToken = () => {
-    var token = document.cookie.split(';')[0];
-    token = token.split('=')[1];
-    return token;
+    var cookie = document.cookie.split(";").reduce((object, el) => { return Object.assign(Object.assign({}, object), { [el.split("=")[0]]: el.split("=")[1] }); }, {});
+    return cookie['csrftoken'];
 };
 exports.reportItems = (requestSelection) => {
     const results = Object.keys(requestSelection).map(el => {
@@ -45416,14 +45394,6 @@ exports.reportItems = (requestSelection) => {
             .then(response => dispatch(exports.MakeCopyrightInfrigementNoticeSuccess())).catch(error => {
             dispatch(exports.MakeCopyrightInfrigementNoticeError());
         });
-        // fetch('/data/PostNotice/', 
-        // {
-        // method:'post',
-        // headers: {'X-CSRFToken' :getCSRFToken() },
-        // body:JSON.stringify({ 
-        //   ...results
-        // })
-        // } ).then(response=> dispatch(MakeCopyrightInfrigementNoticeSuccess()))
     };
 };
 

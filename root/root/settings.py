@@ -25,7 +25,7 @@ SECRET_KEY = 's(0g#^%3p4f6!@#0lb)6sem7wu*@t=ev5j2sfwmtrsdp7z-1jf'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['aliscrapix.pythonanywhere.com', '127.0.0.1']
 
 
 # Application definition
@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'frontend',
     'backend',
     'rest_framework',
-    'knox',
+ 
 ]
 
 MIDDLEWARE = [
