@@ -45217,15 +45217,23 @@ const TableRow = (Props) => {
     const handleRequestType = () => {
         switch (Props.Record.status) {
             case "Requested":
-                return (React.createElement("td", null,
-                    React.createElement("p", null, "Request Sent"),
-                    React.createElement("p", null, "Type of request:"),
-                    React.createElement("p", null, Props.Record.category)));
+                return (React.createElement("td", { className: "requested" },
+                    React.createElement("strong", null, "Request Sent"),
+                    "  ",
+                    React.createElement("br", null),
+                    "  ",
+                    React.createElement("br", null),
+                    React.createElement("span", null, "Type of request:"),
+                    React.createElement("br", null),
+                    React.createElement("strong", null,
+                        "  ",
+                        Props.Record.category,
+                        " ")));
             case "Deleted":
-                return (React.createElement("td", null,
-                    React.createElement("p", null, "Record deleted"),
+                return (React.createElement("td", { className: "deleted" },
+                    React.createElement("strong", null, "Record deleted"),
                     React.createElement("p", null, "Type of request"),
-                    React.createElement("p", null, Props.Record.category)));
+                    React.createElement("strong", null, Props.Record.category)));
             default:
                 return (React.createElement("td", null,
                     " ",
@@ -45244,9 +45252,9 @@ const TableRow = (Props) => {
         switch (Props.Record.status) {
             case "Requested":
                 return (React.createElement("td", { className: "requested" },
-                    React.createElement("p", null, "Date"),
+                    React.createElement("strong", null, "   Date"),
                     React.createElement("p", null, Props.Record.dateRequested),
-                    React.createElement("p", null, "Hour"),
+                    React.createElement("strong", null, "       Hour "),
                     React.createElement("p", null, Props.Record.timeRequested.split(".")[0])));
             case "Deleted":
                 return (React.createElement("td", { className: "deleted" },

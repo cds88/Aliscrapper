@@ -94,18 +94,18 @@ const handleRequestTypeChange=(e:React.ChangeEvent<HTMLSelectElement>):void=>{
         switch(Props.Record.status){
             case "Requested":
                 return(
-                    <td >
-                        <p>Request Sent</p>
-                        <p>Type of request:</p>
-                        <p>{Props.Record.category}</p>
+                    <td className="requested" >
+                        <strong>Request Sent</strong>  <br />  <br />
+                        <span>Type of request:</span><br />
+                        <strong >  {Props.Record.category} </strong> 
                     </td>
                 )
             case "Deleted":
                 return(
-                    <td >
-                        <p>Record deleted</p>
-                        <p>Type of request</p>
-                        <p>{Props.Record.category}</p>
+                    <td className="deleted">
+                        <strong>Record deleted</strong>  
+                           <p>Type of request</p>
+                        <strong>{Props.Record.category}</strong>
                     </td>
                 )
             default:
@@ -137,9 +137,9 @@ const handleRequestTypeChange=(e:React.ChangeEvent<HTMLSelectElement>):void=>{
                    
                     <td className="requested" >
                  
-                        <p>Date</p>
+                        <strong>   Date</strong>
                         <p>{Props.Record.dateRequested}</p>
-                        <p>Hour</p>
+                        <strong>       Hour </strong>
                         <p>{Props.Record.timeRequested.split(".")[0]}</p>
    
                     </td>
