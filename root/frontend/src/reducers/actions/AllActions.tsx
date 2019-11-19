@@ -80,8 +80,10 @@ export interface Cookie{
 export const getCSRFToken = () => {
  
     var cookie= document.cookie.split(";").reduce<Cookie>((object, el) => { return { ...object, [el.split("=")[0]]: el.split("=")[1] } }, {})
-     
-    return cookie['csrftoken'] 
+    
+    var token;
+    Object.keys(cookie).forEach((el) => { if (el.includes("csrftoken"))  token= cookie[el]  })
+    return token;
 }
 
 export const reportItems = (requestSelection:any)=>{

@@ -45377,7 +45377,10 @@ exports.fetchBeginDispatch = (dataType) => {
 };
 exports.getCSRFToken = () => {
     var cookie = document.cookie.split(";").reduce((object, el) => { return Object.assign(Object.assign({}, object), { [el.split("=")[0]]: el.split("=")[1] }); }, {});
-    return cookie['csrftoken'];
+    var token;
+    Object.keys(cookie).forEach((el) => { if (el.includes("csrftoken"))
+        token = cookie[el]; });
+    return token;
 };
 exports.reportItems = (requestSelection) => {
     const results = Object.keys(requestSelection).map(el => {
